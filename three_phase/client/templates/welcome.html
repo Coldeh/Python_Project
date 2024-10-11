@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Welcome,client {{ username }}!</h1>
+    <a href="" ><button>logout</button></a>
+</body>
+</html>
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="dash">
+        <div class="menu">
+            <div class="logo">
+                <img src="{% static 'images/logo.png' %}" alt="logo" class="logo">
+                <p class="lg">Logo</p>
+            </div>
+            <div class="menulogo">
+                <p class="men">Menu</p>
+            </div>
+            <div class="listing">
+                <div class="list1">
+                    <div class="menulogo">
+                        <img src="{% static 'images/dashboard.png' %}" alt="dashboard" class="dashboard">
+                    </div>
+                    <div class="menutitle">
+                        <a href=""><p class="dashbd">Dashboard</p></a>
+                    </div>
+                </div>
+                <div class="list1">
+                    <div class="menulogo">
+                        <img src="{% static 'images/items.png' %}" alt="items" class="items">
+                    </div>
+                    <div class="menutitle2">
+                        <a href=""><p class="dashbd2">Items</p></a>
+                    </div>
+                </div>
+                <div class="list1">
+                    <div class="menulogo">
+                        <img src="{% static 'images/cart1.png' %}" alt="cart" class="cart">                    
+                    </div>
+                    <div class="menutitle">
+                        <a href=""><p class="dashbd3">Cart</p></a>
+                    </div>
+                </div>
+                <div class="list1">
+                    <div class="menulogo">
+                        <img src="{% static 'images/records.png' %}" alt="records" class="records">
+                    </div>
+                    <div class="menutitle">
+                        <a href=""><p class="dashbd4">Records</p></a>
+                    </div>
+                </div>
+                <div class="list1">
+                    <div class="menulogo">
+                        <img src="{% static 'images/logout1.png' %}" alt="logout" class="logout">
+                    </div>
+                    <div class="menutitle">
+                        <a href="{% url 'client_logout' %}"><p class="dashbd5">Logout</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="therest">
+
+        
+        <div class="topbar">
+            <div class="name">
+                <div class="namelogo">
+                    <p>N</p>
+                </div>
+                <div class="namey">
+                    <p>{{ username }}</p>
+                </div>
+                <div class="downarrow">
+                    <img src="images/down.png" alt="down" class="down">
+                </div>
+            </div>
+            <div class="logoutbtn">
+                <a href="{% url 'client_logout' %}"><button class="logbtn">Logout</button></a>
+            </div>
+        </div>
+        <div class="filter">
+            <div class="search">
+                <p>Filter:-</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>

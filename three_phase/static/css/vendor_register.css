@@ -1,0 +1,87 @@
+@import url(https://db.onlinewebfonts.com/c/0085cba6e297770cb5b327f701fbe358?family=FSP+DEMO+-+Isidora+Sans);
+
+@font-face {
+    font-family: "FSP DEMO - Isidora Sans";
+    src: url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.eot");
+    src: url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.svg#FSP DEMO - Isidora Sans")format("svg");
+}
+
+*{
+    margin: 0%;
+    padding: 0;
+}
+body{
+    font-family: "FSP DEMO - Isidora Sans";
+}
+.formpart1{
+    background-color: white;
+    box-shadow: 2px 7px 12px grey;
+    display: flex;
+    margin-left: 25%;
+    margin-top: 12%;
+    margin-right: 25%;
+    border-radius: 33px;
+}
+.register{
+    padding: 6%;
+}
+.form1{
+    width: 40%;
+    padding-left: 5%;
+}
+.form2{
+    width: 100%;
+    padding-top: 3%;
+}
+.started{
+    font-size: 60px;
+    font-family: "FSP DEMO - Isidora Sans";
+}
+.already{
+    padding-left: 3%;
+    padding-top: 2%;
+}
+input{
+    width: 90%;
+    height: 40px;
+    margin-top: 3%;
+    border-radius: 22px;
+    border: none;
+    padding-left: 5%;
+    margin-left: 3%;
+    background-color: gainsboro;
+}
+.regist{
+    width: 95%;
+    font-family: "FSP DEMO - Isidora Sans";
+    letter-spacing: 1.5px;
+    border-radius: 22px;
+    border: none;
+    padding: 2%;
+    font-size: 20px;
+    margin-top: 3.5%;
+    margin-left: 3%;
+    background-color: orangered;
+}
+.sign{
+    font-size: 13px;
+    padding-left: 4%;
+    margin-bottom: 1%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.register{
+    width: 110%;
+    padding-top: 14%;
+}
+.vendor{
+    font-family: "FSP DEMO - Isidora Sans";
+    padding-left: 3%;
+    font-size: 20px;
+    font-weight: 600;
+}

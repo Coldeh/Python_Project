@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/vendor_register.css' %}">
+    <title>Vendor Registration</title>
+</head>
+<body>
+    <div class="formpart1">
+        <div class="form1">
+            <img src="{% static 'images/welcome.png' %}" alt="register" class="register">
+        </div>
+        <form action="" method="post">
+            {% csrf_token %}
+        <div class="form2">
+            <h1 class="started">Get started</h1>
+            <p class="vendor">Vendor registration</p>
+            <p class="already">Already have an account?<a href="{% url 'vendor_login' %}">Sign in</a></p>
+            <div class="username">
+                <input type="text" class="username" name="username" placeholder="vendor name...">
+            </div>
+            <div class="email">
+                <input type="email" class="email" name="email" placeholder="vendor email...">
+            </div>
+            <div class="passwords">
+                <div class="password1">
+                    <input type="password" class="password1" name="password1" placeholder="password...">
+                </div>
+                <div class="password2">
+                    <input type="password" class="password2" name="password2" placeholder="Confirm password...">
+                </div>
+            </div>
+            <button class="regist">Register</button>
+            <p class="sign">By signing up i agree in the Terms and services and privacy policy.</p>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

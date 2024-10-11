@@ -1,0 +1,151 @@
+@import url(https://db.onlinewebfonts.com/c/0085cba6e297770cb5b327f701fbe358?family=FSP+DEMO+-+Isidora+Sans);
+
+@font-face {
+    font-family: "FSP DEMO - Isidora Sans";
+    src: url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.eot");
+    src: url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.svg#FSP DEMO - Isidora Sans")format("svg");
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    width: 12.5%;
+    height: 100vh;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px black;
+    font-family: "FSP DEMO - Isidora Sans";
+    letter-spacing: 1.2px;
+    font-size: 23px;
+    padding-right: 1.5%;
+}
+.logo{
+    background-color: white;
+    padding-left: 25%;
+}
+.dashboard{
+    width: 11.5%;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+.men{
+    font-family: "FSP DEMO - Isidora Sans";
+
+}
+.list1{
+    display: flex;
+    height: 82px;
+}
+.list1 a{
+    text-decoration: none;
+    color: black;
+}
+.dashbd{
+    font-family: "FSP DEMO - Isidora Sans";
+    padding-left: 50%;
+    font-size: 23px;
+    font-weight: 200;
+}
+.menulogo{
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+.menutitle,.menutitle2{
+    padding-top: .5%;
+    position: absolute;
+}
+.items{
+    width: 16%;
+}
+.dashbd2{
+    padding-left: 95%;
+    padding-top: 1.5%;
+}
+.cart{
+    width: 15%;
+}
+.dashbd3{
+    padding-left: 125%;
+}
+.records{
+    width: 14%;
+    padding-left: 1%;
+}
+.dashbd4{
+    padding-left: 65%;
+}
+.logout{
+    width: 12%;
+    padding-left: 1%;
+}
+.dashbd5{
+    padding-left: 75%;
+}
+.listing{
+    padding-left: 5%;
+}
+.dash{
+    display: flex;
+}
+.therest{
+    background-color: white;
+    width: 100%;
+}
+.topbar{
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px black;
+}
+.name{
+    display: flex;
+    height: fit-content;
+}
+.lg{
+    margin:0;
+    padding: 0;
+    
+    padding-left: 25%;
+}
+.topbar{
+    display: flex;
+    height: 85px;
+    justify-content: space-between;
+    padding-right: 10%;
+}
+.name{
+    border: 2px solid black;
+    width: 12%;
+    padding: .25%;
+    border-radius: 33px;
+    margin-left: 80%;
+    font-family: "FSP DEMO - Isidora Sans";
+    margin-top: .5%;
+    margin-bottom: 3%;
+}
+.namelogo{
+    border: 1px solid black;
+    background-color: orangered;
+    border-radius: 34px;
+    width: 160%;
+    text-align: center;
+    color: white;
+}
+.logbtn{
+    margin-top: 13%;
+    padding: 32%;
+    width: 199%;
+    border-radius: 42px;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    font-family: "FSP DEMO - Isidora Sans";
+    border: none;
+    background-color: orangered;
+    color: white;
+}
+.down{
+    padding-top: 34%;
+}

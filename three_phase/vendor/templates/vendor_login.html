@@ -1,0 +1,138 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Signing</title>
+    
+    <style>
+      @import url(https://db.onlinewebfonts.com/c/0085cba6e297770cb5b327f701fbe358?family=FSP+DEMO+-+Isidora+Sans);
+
+@font-face {
+    font-family: "FSP DEMO - Isidora Sans";
+    src: url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.eot");
+    src: url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0085cba6e297770cb5b327f701fbe358.svg#FSP DEMO - Isidora Sans")format("svg");
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.formone{
+    background-color: white;
+    width: 30%;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    margin-left: 35%;
+    margin-top: 12%;
+    border-radius: 33px;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.signin{
+    font-family: "FSP DEMO - Isidora Sans";
+    padding-top: 2%;
+    font-size: 75px;
+    padding-bottom: 4%;
+}
+.account{
+    font-size: 15px;
+    font-family: "FSP DEMO - Isidora Sans";
+}
+.username{
+    margin-top: 1%;
+    font-family: "FSP DEMO - Isidora Sans";
+    border-radius: 33px;
+    border: none;
+    padding: 3%;
+    padding-left: 3%;
+    width: 70%;
+    margin-left: 9.5%;
+}
+.password{
+    margin-top: -1.2%;
+    font-family: "FSP DEMO - Isidora Sans";
+    border-radius: 33px;
+    border: none;
+    padding: 3%;
+    padding-left: 3%;
+    width: 70%;
+    margin-left: 9.5%;
+}
+.login{
+    width: 53%;
+    border-radius: 33px;
+    border: none;
+    font-size: 20px;
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2.5%;
+    background-color: orangered;
+    font-family: "FSP DEMO - Isidora Sans";
+}
+input{
+    background-color: gainsboro;
+}
+.form2{
+    margin-top: 4%;
+}
+.forgot{
+    font-family: "FSP DEMO - Isidora Sans";
+    padding-bottom: 2%;
+}  
+.adm{
+    font-family: "FSP DEMO - Isidora Sans";
+    font-size: 30px;
+    font-weight: 900;
+}
+.error{
+    background-color: red;
+    width: fit-content;
+    text-align: center;
+    color: white;
+    padding: 1.5%;
+    border-radius: 22px;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+    </style>
+</head>
+<body>
+    <div class="formone">
+        <div class="signlogo">
+            <img src="{% static '/images/login.gif' %}" alt="login">
+        </div>
+        <div class="signtitle">
+            <p class="adm">Vendor</p>
+            <h1 class="signin">Sign in</h1>
+            <p class="account">Don't have an account?<a href="{% url 'vendor_registration' %}">Sign up</a></p>
+        </div>
+        {% if error_message %}
+            <p style="color: white;" class="error">{{ error_message }}</p>
+        {% endif %}
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="username">
+                <input type="text" name="username" class="username" placeholder="username..">
+            </div>
+            <div class="password">
+                <input type="password" name="password" class="password" placeholder="password..">
+            </div>
+
+            <div class="submit">
+                <p class="forgot">Forgot password?</p>
+                <button class="login">login</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
